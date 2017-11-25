@@ -30,10 +30,18 @@ public class TailsTest {
 		
 		assertThat(tails.get(0), Matchers.equalTo(HELLO));
 	}
+	
+	@Test
+    public void tailsShouldReturnTwoSizedStrings() {
+	    assertThat(tails.get(2), Matchers.equalTo("llo"));
+	}
+    
 	@Test
 	public void tailsShouldReturnEmptyStringAsLastElement() {
 		
 		assertThat(tails.get(tails.size()-1), Matchers.equalTo(""));
 	}
+	
+	
 
 }
