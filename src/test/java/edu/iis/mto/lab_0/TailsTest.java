@@ -33,7 +33,7 @@ public class TailsTest {
 	
 	@Test
     public void tailsShouldReturnTwoSizedStrings() {
-	    assertThat(tails.get(2), Matchers.equalTo("llo"));
+	    assertThat(tails.get(3), Matchers.equalTo("lo"));
 	}
     
 	@Test
